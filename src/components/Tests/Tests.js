@@ -4,10 +4,8 @@ import Navibar from "../Navibar/Navibar";
 import axios from "axios";
 import {
   Card,
-  CardGroup,
   Button,
   Container,
-  Col,
   Row,
   ListGroupItem,
   ListGroup,
