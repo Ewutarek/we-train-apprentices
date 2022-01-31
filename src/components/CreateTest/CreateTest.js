@@ -6,7 +6,9 @@ import {
   Button,
   ButtonGroup,
   ButtonToolbar,
-  CloseButton
+  CloseButton,
+  Row,
+  Col
 } from "react-bootstrap";
 import "./CreateTest.css";
 import Dialog from "../Dialog/Dialog";
@@ -95,24 +97,26 @@ export default class CreateTest extends React.Component {
 
   render() {
     return (
-      <div className="create-quiz-wrapper">
-        <div>
-          <Navibar />
-        </div>
-
-        <div className="main">
-        <div className="p-5 mb-4 bg-light rounded-3 customJumbotron">
-          <div className="container py-5">
-            <h1 className="display-5 fw-bold">Create Test</h1>
+      <>
+      <Navibar />
+      <div className="main-create-test py-5 ">
+      <Container className="mt-5 create-test-container" >
+        <Row>
+          <Col lg={4} md ={6} sm={12} className="text-center mt-5 p-">
+         
+        <div className="p-5 rounded-3 customJumbotron">
+           <div className="container py-5">
+             <h1 className="display-5 fw-bold">Create Test</h1>
             <hr></hr>
           </div>
         </div>
-          <Container>
-            <div className="form card">
-              <Form>
-                <Form.Group className="mb-3" controlId="formBasicText">
-                  <Form.Label>Test Name</Form.Label>
-                  <Form.Control
+         
+          </Col>
+          
+          <Col  lg={8} md ={6} sm={12}>
+          <Form className="text-center mt-5 p-3">
+                 <Form.Group className="mb-3" controlId="formBasicText">
+                 <Form.Control
                     type="text"
                     placeholder="Test Name"
                     onChange={(e) => this.setState({ name: e.target.value })}
@@ -179,15 +183,12 @@ export default class CreateTest extends React.Component {
                   </Button>
                 </div>
               </Form>
-            </div>
-          </Container>
-        </div>
-        <Dialog model={this.state.addQuestion}>
-          <Form>
+              <Dialog model={this.state.addQuestion}>
+           <Form>
           <CloseButton onClick={() => this.setState({addQuestion: false})} />
-            <Form.Group className="mb-3" controlId="formBasicQuestionName">
-              <Form.Label>Question</Form.Label>
-              <Form.Control
+             <Form.Group className="mb-3" controlId="formBasicQuestionName">
+               <Form.Label>Question</Form.Label>
+               <Form.Control
                 type="text"
                 placeholder="Question"
                 value={this.state.questionName}
@@ -225,7 +226,11 @@ export default class CreateTest extends React.Component {
             </Button>
           </Form>
         </Dialog>
+          </Col>
+        </Row>
+      </Container>
       </div>
+      </>
     );
   }
 }
