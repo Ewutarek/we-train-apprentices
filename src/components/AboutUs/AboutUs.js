@@ -1,6 +1,4 @@
 import React from "react";
-import qs from "qs";
-import bootstrap from "bootstrap";
 import { Button } from 'react-bootstrap';
 import Navibar from "../Navibar/Navibar";
 import './AboutUs.css'
