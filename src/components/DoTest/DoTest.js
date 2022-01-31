@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 import "./DoTest.css";
-import { Modal, Button, Container, ProgressBar } from "react-bootstrap";
-import $ from "jquery";
+import {Button, Container } from "react-bootstrap";
 import axios from "axios";
 import Navibar from "../Navibar/Navibar";
 const DoTest = () => {
@@ -49,7 +48,7 @@ const DoTest = () => {
     console.log(` ${pass_fail}`);
   };
 
-  let now = ((currentQuestion )/(questionsData.length))*100;
+
 
   return (
     <div className="test-page">
