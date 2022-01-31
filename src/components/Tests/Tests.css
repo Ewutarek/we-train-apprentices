@@ -1,0 +1,16 @@
+body, html{
+   
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+
+
+
+div.card-body > button{
+    background-color: #02c39a;
+    border: none;
+}
+
+#root > div > div.all-tests-wrapper > div.mainContainer.container > div > div.row.row-cols-md-4 > div{
+    border-color: #02c39a;
+}
+

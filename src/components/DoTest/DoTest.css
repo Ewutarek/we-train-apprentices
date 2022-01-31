@@ -1,0 +1,95 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    background-color: #181818;
+    color: #e2e2e2;
+    overflow-x: hidden;
+  
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+  }
+  
+  h1, h4 {
+    margin: .5em;
+  } */
+  
+  
+  
+  .start-button {
+      border: 1px solid #f83194;
+      border-radius: 15px;
+      padding: 15px 30px;
+      text-decoration: none;
+      color: #ffffff;
+      background-color: #CE5793;
+      transition: 0.3s;
+      font-size: 1em;
+      cursor: pointer;
+      outline: none;
+  }
+  
+  .start-button:hover{
+    color: white;
+    background-color: #616A94;
+    border: none;
+  }
+  
+  .quizz-page{
+    height: 100vh;
+      text-align: center;
+      margin-top: 10vh;
+      background-image: url('../../../public/course-blank-img.png');
+      background-repeat: no-repeat;
+      background-size: cover; 
+  }
+  
+  .choice-group{
+   display: flex;
+   flex-direction: column;
+   width: 50%;
+   margin: 2em auto;
+  }
+  
+  .choice{
+    display: block;
+      border: 1px solid #518A92;
+      border-radius: 15px;
+      padding: 15px 30px;
+      color: #ffffff;
+      background-color: #161A31;
+      font-size: 1em;
+      margin-top: 1em;
+      cursor: pointer;
+  }
+  
+  .choice:hover{
+    color: #ffff;
+    background-color: #518A92;
+  }
+  
+  .End{
+    margin-top: 8em;
+    text-align: center;
+  }
+  
+  .Results {
+    color: #ffff;
+    background-color: #518A92 ;
+    border-radius: 15px;
+    width: 25%;
+    margin: 2em auto;
+    padding: 20px;
+  }
+  
+  .Round-Info{
+    border: 1px solid #518A92;
+    border-radius: 15px;
+    border-radius: 15px;
+    width: 25%;
+    margin: 2em auto;
+    padding: 20px;
+  }

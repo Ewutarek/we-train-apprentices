@@ -1,0 +1,8 @@
+body, html{
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+
+div.apprenticeships-wrapper > div.mainContainer.container > div.row.row-cols-md-4 > div, 
+div.apprenticeships-wrapper > div.mainContainer.container > div.row.row-cols-md-4 > div > div.list-group-flush.list-group > div{
+    background-color: #f0f3bd;
+}

@@ -1,0 +1,14 @@
+.nav-item{
+    text-decoration: none;
+}
+
+.navbar-nav .nav-link {
+    padding: 8p;
+    left: 0;
+}
+
+#root > div > div.about-body > div.navibar-wrapper > nav{
+    border: 5px solid #f0f3bd;
+    border-radius: 5px;
+}
+

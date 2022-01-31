@@ -1,0 +1,24 @@
+.auth-body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: linear-gradient(#05668d, #f0f3bd);
+    height: 100vh;
+}
+
+
+
+.auth-wrapper{
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
+    margin-top: 5%;
+    height: auto;
+    background-color: #ffff;
+    border-radius: 25px;
+}
+
+.auth-wrapper .new {
+    margin-top: 50px;
+    cursor: pointer;
+}
+
