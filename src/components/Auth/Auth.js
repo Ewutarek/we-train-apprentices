@@ -5,12 +5,9 @@ import Signup from "./SignUp";
 import axios from "axios";
 import store from "../../store/index";
 //import Toast from '../Toast/Toast'
-import { Container } from "react-bootstrap";
+import { Col, Container,Row } from "react-bootstrap";
 import "./Auth.css";
 import { toast } from "react-toastify";
-import { Image } from "react-bootstrap";
-
-
 
 
 export default class Auth extends React.Component {
@@ -22,7 +19,6 @@ export default class Auth extends React.Component {
   }
 
   signIn = (email, password) => {
-    
     axios
       .post("/api/users/login", { email, password })
       .then((res) => {
@@ -84,33 +80,27 @@ export default class Auth extends React.Component {
         <Signup signUp={this.signUp} />
       );
     return (
-      <div className="auth-body">
-        <div className="auth-wrapper">
-          <Container>
-            {/* <div className="header">WE TRAIN APPRENTICES</div> */}
-
-            <div className=" bg-light rounded-3 customJumbotron">
-              <div className="container">
-                <h1 className="display-5 fw-bold">Welcome</h1>
-              </div>
-            </div>
-            <Image
-              className="logo mb-5"
-              src={process.env.PUBLIC_URL + "/WeTrainApprentices.png"}
-              alt="logo"
-              fluid
-            />
-            {page}
-            <div className="new text-center" onClick={this.changeTab}>
-              {this.state.tab === "signin"
-                ? "Sign up here"
+     
+      <div className="main-auth py-5 ">
+      <Container className="mt-5 auth-container" >
+        <Row>
+          <Col lg={4} md ={6} sm={12} className="text-center mt-5 p-3">
+            <img src={process.env.PUBLIC_URL + "/WeTrainApprentices.png" } alt="logo" className="logo"/>
+          {page}
+          <div className="new text-center" onClick={this.changeTab}>
+               {this.state.tab === "signin"
+               ? "Sign up here"
                 : "Already have an account? Sign in"}
             </div>
-          </Container>
-        </div>
+          </Col>
+          
+          <Col  lg={8} md ={6} sm={12}>
+            <img src={process.env.PUBLIC_URL + "/6.jpg"} className="w-100"/>
+          </Col>
+        </Row>
+      </Container>
       </div>
+    
     );
   }
 }
-
-
