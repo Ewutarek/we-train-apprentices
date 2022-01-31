@@ -33,7 +33,7 @@ export default class Dashboard extends React.Component {
         >
           <div className="p-5 mb-4 rounded-3 customJumbotron" style={{ backgroundColor: "#00a896" }}>
             <div className="container py-5">
-              <h1 className="display-5 fw-bold">Dasboard</h1>
+              <h1 className="display-5 fw-bold">Dashboard</h1>
               <hr></hr>
               <p className="col-md-8 fs-4">
                 Please Note that this page is not showing real time results.
