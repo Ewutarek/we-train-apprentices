@@ -1,5 +1,4 @@
 import React from "react";
-import qs from "qs";
 import axios from "axios";
 import "./Dashboard.css";
 import { Table, Container } from "react-bootstrap";
