@@ -60,13 +60,6 @@ export default class CreateTest extends React.Component {
     });
   };
 
-  removeQuestion = (question) => {
-    this.setState({
-      question: this.state.questions.filter(
-        (ques) => ques.questionName !== question.questionName
-      ),
-    });
-  };
 
   saveTest = () => {
     let test = {
@@ -157,14 +150,7 @@ export default class CreateTest extends React.Component {
                         Number of answers: {ques.answers.length}
                       </Button>
                     </ButtonGroup>
-                    <ButtonGroup aria-label="Third group">
-                      <Button
-                        onClick={() => this.removeQuestion(ques)}
-                        variant="danger"
-                      >
-                        Delete
-                      </Button>
-                    </ButtonGroup>
+   
                   </ButtonToolbar>
                 ))}
 
