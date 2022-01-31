@@ -14,25 +14,12 @@ export default class Signin extends React.Component {
   render() {
     return (
       <div className="sign-in-wrapper">
-        {/* <div className="form">
-                    <div className="input-wrapper">
-                        <div>Email Address</div>
-                        <input className="input" type="text" placeholder="Email Adress" value={this.state.email} onChange={e => this.setState({ email: e.target.value})}/>
-                    </div>
 
-                    <div className="input-wrapper">
-                        <div>Password</div>
-                        <input className="input" type="password" placeholder="Password" value={this.state.password} onChange={e => this.setState({ password: e.target.value})}/>
-                    </div>
-                    
-                    <div className="btn" onClick={() => this.props.signIn(this.state.email, this.state.password)}>Sign In</div>
-                </div> */}
         <Form>
           <Form.Group className="mb-3" controlId="formBasicEmail">
-            <Form.Label>Email address</Form.Label>
             <Form.Control
               type="email"
-              placeholder="Enter email"
+              placeholder="Enter"
               value={this.state.email}
               onChange={(e) => this.setState({ email: e.target.value })}
             />
@@ -40,7 +27,6 @@ export default class Signin extends React.Component {
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="formBasicPassword">
-            <Form.Label>Password</Form.Label>
             <Form.Control
               type="password"
               placeholder="Password"
@@ -62,6 +48,8 @@ export default class Signin extends React.Component {
           </div>
         </Form>
       </div>
+
+     
     );
   }
 }
