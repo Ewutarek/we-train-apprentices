@@ -15,35 +15,11 @@ export default class Signup extends React.Component {
   render() {
     return (
       <div className="sign-up-wrapper">
-        {/* <div className="form">
-                    <div className="input-wrapper">
-                        <div>Email Address</div>
-                        <input className="input" type="text" placeholder="Email Adress" value={this.state.email} onChange={e => this.setState({ email: e.target.value})}/>
-                    </div>
-
-                    <div className="input-wrapper">
-                        <div>Password</div>
-                        <input className="input" type="password" placeholder="Password" value={this.state.password} onChange={e => this.setState({ password: e.target.value})}/>
-                    </div>
-
-                    <div className="input-wrapper">
-                        <div>First Name</div>
-                        <input className="input" type="text" placeholder="First name" value={this.state.firstName} onChange={e => this.setState({ firstName: e.target.value})}/>
-                    </div>
-
-                    <div className="input-wrapper">
-                        <div>Last Name</div>
-                        <input className="input" type="text" placeholder="Last name" value={this.state.lastName} onChange={e => this.setState({ lastName: e.target.value})}/>
-                    </div>
-                    
-                    <div className="btn" onClick={() => this.props.signUp({...this.state})}>Sign Up</div>
-                </div>  */}
         <Form>
           <Form.Group className="mb-3" controlId="formBasicEmail">
-            <Form.Label>Email address</Form.Label>
             <Form.Control
               type="email"
-              placeholder="Enter email"
+              placeholder="Enter"
               value={this.state.email}
               onChange={(e) => this.setState({ email: e.target.value })}
             />
@@ -51,7 +27,6 @@ export default class Signup extends React.Component {
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="formBasicPassword">
-            <Form.Label>Password</Form.Label>
             <Form.Control
               type="password"
               placeholder="Password"
@@ -61,7 +36,6 @@ export default class Signup extends React.Component {
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="formBasicFirstName">
-            <Form.Label>First Name</Form.Label>
             <Form.Control
               type="text"
               placeholder="First name"
@@ -72,7 +46,6 @@ export default class Signup extends React.Component {
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="formBasicLastName">
-            <Form.Label>Last Name</Form.Label>
             <Form.Control
               type="text"
               placeholder="Last name"
