@@ -95,7 +95,7 @@ export default class Auth extends React.Component {
           </Col>
           
           <Col  lg={8} md ={6} sm={12}>
-            <img src={process.env.PUBLIC_URL + "/6.jpg"} className="w-100"/>
+            <img src={process.env.PUBLIC_URL + "/6.jpg"} className="w-100" alt="student-img"/>
           </Col>
         </Row>
       </Container>
