@@ -1,48 +1,42 @@
 import React from "react";
-import { Button } from 'react-bootstrap';
+import { Button, Row, Col, Container } from "react-bootstrap";
 import Navibar from "../Navibar/Navibar";
-import './AboutUs.css'
-
-
+import "./AboutUs.css";
 
 export default class AboutUs extends React.Component {
-
   learnMore = () => {
     this.props.history.push("/apprenticeships");
-  }
+  };
   render() {
     return (
-      <div className="about-body">
+      <div>
         <Navibar />
-
-        <div >
-          <div class="container py-5" >
-            <div class="row h-100 align-items-center py-5" id="about-top" >
-              <div class="col-lg-6" style={{ backgroundColor: "#02c39a" }}>
-                <h1 class="display-4">Welcome to <strong>We Train Apprentices</strong></h1>
-                <p class="lead mb-0" >
-                  Here at <strong>We Train Apprentices</strong>, we aim to provide an opportunity link prospective apprentices and training providers by providing general information. 
-                  We also now provide knowledge testing functionality!
-                </p>
-                <Button className="mb-2" onClick={this.learnMore}>
-                  Learn More
-                </Button>
-              </div>
-              <div class="col-lg-6 d-none d-lg-block h-100 right-side" >
+        <div className="main-about-us py-5 ">
+          <Container className="mt-5 about-us-container">
+            <Row>
+              <Col lg={4} md={6} sm={12} className="text-center">
                 <img
                   src={process.env.PUBLIC_URL + "/5.jpg"}
-                  alt=""
-                  class="img-fluid"
+                  className="w-100"
+                  alt="student"
                 />
-              </div>
-            </div>
-          </div>
-        </div>
+              </Col>
 
-       
+              <Col lg={8} md={6} sm={12}>
+                <h1 class="text-center mt-5 p-3">
+                  Here at <strong>We Train Apprentices</strong>, we aim to
+                  provide an opportunity link prospective apprentices and
+                  training providers by providing general information. We also
+                  now provide knowledge testing functionality!
+                  <Button className="mt-5" onClick={this.learnMore}>
+                    Learn More
+                  </Button>
+                </h1>
+              </Col>
+            </Row>
+          </Container>
+        </div>
       </div>
     );
   }
 }
-
-
