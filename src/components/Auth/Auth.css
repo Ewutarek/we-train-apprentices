@@ -1,24 +1,33 @@
-.auth-body{
+body,html{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background: linear-gradient(#05668d, #f0f3bd);
-    height: 100vh;
+    /* background-color: #d0d0ce; */
+    min-height: 100vh;
+  }
+
+.logo{
+    width: auto;
+    height: 70px;
+    margin-bottom: 2rem;
 }
 
-
-
-.auth-wrapper{
-    width: 100%;
-    max-width: 330px;
-    padding: 15px;
-    margin: auto;
-    margin-top: 5%;
-    height: auto;
-    background-color: #ffff;
-    border-radius: 25px;
+.btn-primary{
+    color: #056680;
+    background-color: #02c39a !important;
+    border-color: #465552 !important;
 }
 
-.auth-wrapper .new {
-    margin-top: 50px;
-    cursor: pointer;
+.auth-container{
+    border-radius: 27.5px;
+    box-shadow: 0 10px 30px 0 rgba(172, 168, 168, 0.43);
+    background-color: #fff;
 }
 
+.main-auth{
+background-image: 
+url(
+"../../../public/doodad\ \(1\).png");
+background-size: "cover";
+height: 100vh;
+margin-top: -10px;
+background-repeat:no-repeat; 
+}
